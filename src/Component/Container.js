@@ -4,17 +4,25 @@ import NotConnected from './NotConnected';
 import Staked from './Staked';
 import Price from './Price';
 import Rewards from './Rewards';
+import React from "react";
 
-function Container() {
-  return (
-    <div className='container'>
-        <Staking/>
-        <Rewards/>
-        <Price/>
-        <Staked/>
-        <NotConnected/>
-    </div>
-  );
-}
+class Container extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = {date: new Date()};
+    }
+   
+    render() {
+      return (
+        <div className='container'>
+            <Staking/>
+            <Rewards/>
+            <Price/>
+            <Staked/>
+            <NotConnected/>
+        </div>
+      );
+    }
+  }
 
-export default Container;
+  export default Container;
