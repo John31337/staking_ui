@@ -11,23 +11,23 @@ class App extends React.Component{
   constructor(props) {
     super(props);
     this.state = {
-      IsShowModal: true,
+      IsShowModal: false,
     };
+
+    this.handler = this.handler.bind(this);
   }
 
-  ShowModal(){
-    if(this.state.IsShowModal)
-      return <Modal/>
-  }
+  handler = () => {
+    var IsShowed = this.state.IsShowModal;
+    this.setState({ IsShowModal: !IsShowed });
+  };
 
   render() {
     return (
       <div className="staking-container">
-        <Nav/>
-        <Body/>
-        {
-          this.state.IsShowModal?<Modal/>:null
-        }
+        <Nav handler={this.handler} IsShowModal={this.state.IsShowModal}/>
+        <Body handler={this.handler} IsShowModal={this.state.IsShowModal}/>
+        <Modal handler={this.handler} IsShowModal={this.state.IsShowModal}/>
       </div>
     );
   }
