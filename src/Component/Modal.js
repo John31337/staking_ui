@@ -17,7 +17,20 @@ class Modal extends React.Component {
     
     Onclick = () =>{
         console.log("selected wallet");
+        this.CollectWallet();
     }
+
+    CollectWallet = () => {
+        if(window.ethereum){
+          window.ethereum.request({method: 'eth_requestAccounts'})
+          .then(result => {
+            console.log(result[0]);
+          })
+        }else{
+          console.error("Install MetaMask");
+          console.log(window);
+        }
+      }
 
 
     
@@ -35,12 +48,12 @@ class Modal extends React.Component {
                             style={{
                                 transform: "none",
                                 transition: "transform 225ms cubic-bezier(0, 0, 0.2, 1) 0ms"}}>
-                            <div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation24 MuiDialog-paper MuiDialog-paperScrollPaper MuiDialog-paperWidthSm css-uhb5lp" role="dialog" aria-describedby="alert-dialog-slide-description" aria-labelledby="mui-45758897">
+                            <div className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation24 MuiDialog-paper MuiDialog-paperScrollPaper MuiDialog-paperWidthSm css-uhb5lp" role="dialog" aria-describedby="alert-dialog-slide-description" aria-labelledby="mui-45758897">
                                 <h3 className="connect-wallet-card-title">Select Wallet</h3><h3 className="connect-wallet-card-text">Connect to the site below with one of our available wallet providers.</h3>
                                 <div className="MuiDialogContent-root css-1ty026z">
                                     <button className="choose-wallet-button" onClick = {this.Onclick}>
                                         <span>Metamask</span>
-                                        <div class="wallet-icon-container">
+                                        <div className="wallet-icon-container">
                                             <img height={24} width={24} src={Metamask}/>
                                         </div>
                                     </button>
@@ -79,12 +92,12 @@ class Modal extends React.Component {
                             style={{
                                 transform: "translateY(775px)",
                                 visibility: "hidden"}}>
-                            <div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation24 MuiDialog-paper MuiDialog-paperScrollPaper MuiDialog-paperWidthSm css-uhb5lp" role="dialog" aria-describedby="alert-dialog-slide-description" aria-labelledby="mui-45758897">
+                            <div className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation24 MuiDialog-paper MuiDialog-paperScrollPaper MuiDialog-paperWidthSm css-uhb5lp" role="dialog" aria-describedby="alert-dialog-slide-description" aria-labelledby="mui-45758897">
                                 <h3 className="connect-wallet-card-title">Select Wallet</h3><h3 className="connect-wallet-card-text">Connect to the site below with one of our available wallet providers.</h3>
                                 <div className="MuiDialogContent-root css-1ty026z">
                                     <button className="choose-wallet-button">
                                         <span>Metamask</span>
-                                        <div class="wallet-icon-container">
+                                        <div className="wallet-icon-container">
                                             <img height={24} width={24} src={Metamask}/>
                                         </div>
                                     </button>

@@ -18,8 +18,8 @@ class Staking extends React.Component {
             <div className="Staking">
                 <div className="card">
                     <img alt="" class="icon" src={Icon}/>
-                    <span class="card-title">Staked</span>
-                    <span class="number">$0.00</span>
+                    <span className="card-title">Staked</span>
+                    <span className="number">$0.00</span>
                     <div className='divider'></div>
                     <div className='not-connected' onClick={this.handleClick}>Connect Wallet</div>
                 </div>

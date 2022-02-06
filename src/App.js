@@ -3,15 +3,30 @@ import Body from './Component/Body';
 import Nav from './Component/Nav';
 import Modal from './Component/Modal';
 import { connect } from "react-redux";
-import React from "react";
+import React, {useEffect} from "react";
 import { Provider } from "react-redux";
 import { createStore } from "redux";
+
+// function connectMetaMask() {
+//   // We need to make the connection to MetaMask work.
+//   // Send Request for accounts and to connect to metamask.
+//   window.web3.requestAccounts()
+//   .then((result) => {
+//     // Whenever the user accepts this will trigger
+//     console.log(result)
+//   })
+//   .catch((error) => {
+//     // Handle errors, such as when a user does not accept
+//     throw new Error(error);
+//   });
+// };
 
 class App extends React.Component{
   constructor(props) {
     super(props);
     this.state = {
       IsShowModal: false,
+      IsConnectedWallet: false,
     };
 
     this.handler = this.handler.bind(this);
@@ -32,5 +47,7 @@ class App extends React.Component{
     );
   }
 }
+
+
 
 export default App;

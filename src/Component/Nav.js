@@ -15,10 +15,10 @@ class Nav extends React.Component {
       <div className="staking-nav-container">
         <a aria-current="page" className='active'  href='/'>
           <img className="desktopLogo" alt="" src={logo}/>
-          <img class="mobileLogo" alt="" src={logoMobile}/>
+          <img className="mobileLogo" alt="" src={logoMobile}/>
         </a>
-        <div class="staking-nav-contents-container">  
-          <a aria-current="page" class="is-active">
+        <div className="staking-nav-contents-container">  
+          <a aria-current="page" className="is-active">
             <div className='staking-nav-tab' variant="text" color="inherit">Overview</div>
           </a>
           <a aria-current="page">
@@ -33,7 +33,7 @@ class Nav extends React.Component {
           <a aria-current="page">
             <div className="staking-nav-wallet-button" onClick = {this.props.handler}>Connect Wallet</div>
           </a>
-          <div><button class="menu-button"><img alt="" src={menuButton}/></button></div>
+          <div><button className="menu-button"><img alt="" src={menuButton}/></button></div>
         </div>
       </div>
     );
