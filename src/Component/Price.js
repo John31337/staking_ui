@@ -1,4 +1,5 @@
 import '../css/Body.css';
+// import '../css/Main.css';
 import EthIcon from "../static/media/EthIcon.png";
 import Maximum from "../static/media/maximize.c0438627.svg";
 
@@ -21,7 +22,7 @@ function Price() {
                                 <div className='maximize-container'>
                                     <img src={Maximum}/>
                                 </div>
-                                <svg class="chart-gradient">
+                                <svg className="chart-gradient">
                                     <defs>
                                         <linearGradient id="myGradient" x1="50" y1="50" x2="400" y2="0" gradientUnits="userSpaceOnUse">
                                             <stop offset="0.0748905" stop-color="#FFA461"></stop>

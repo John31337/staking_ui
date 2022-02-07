@@ -1,5 +1,6 @@
 import { Button } from '@material-ui/core';
 import '../css/Body.css';
+import '../css/Main.css';
 import Container from './Container';
 
 function Body() {

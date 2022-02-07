@@ -1,4 +1,5 @@
 import '../css/Modal.css';
+// import '../css/Main.css';
 import React from "react";
 import FadeIn from 'react-fade-in';
 import Metamask from "../static/media/metamask.02e3ec27.png";
@@ -124,7 +125,6 @@ class Modal extends React.Component {
                         </div>
                         <div tabIndex="0" data-test="sentinelEnd"></div>
                     </div>
-                    
                 )
             }
             </>

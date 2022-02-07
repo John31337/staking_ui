@@ -1,5 +1,5 @@
 import '../css/Body.css';
-
+// import '../css/Main.css';
 function NotConnected() {
   return (
     <div className="wallet-not-connected-card">

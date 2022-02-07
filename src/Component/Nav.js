@@ -2,6 +2,7 @@ import logo from '../static/media/stakingLogo.9c5d58cb.svg';
 import logoMobile from '../static/media/stakingLogoMobile.28c0aeb3.svg';
 import menuButton from '../static/media/menu.aca47f39.svg';
 import '../App.css';
+// import '../css/Main.css';
 import React from "react";
 
 class Nav extends React.Component {

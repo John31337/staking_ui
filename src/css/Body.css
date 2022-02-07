@@ -1,6 +1,7 @@
 .body {
     opacity: 1; 
     transform: none;
+    font-family: Graphik Brandpad,Helvetica,sans-serif
 }
 
 .row {
@@ -26,7 +27,7 @@ h2 {
 }
 
 .staking-title {
-    font-family: "Inter",sans-serif;
+    font-family: "Maison Neue";
     font-style: normal;
     font-weight: 600;
     font-size: 54px;
@@ -36,7 +37,7 @@ h2 {
 }
 
 .staking-text {
-    font-family: "Inter",sans-serif;
+    font-family: "Maison Neue";
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -144,7 +145,7 @@ h2 {
 }
 
 .card-title {
-    font-family: "Inter",sans-serif;
+    font-family: "Maison Neue";
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -162,7 +163,7 @@ h2 {
 }
 
 .number, .small-number {
-    font-family: "Inter",sans-serif;
+    font-family: "Maison Neue";
     font-style: normal;
     font-weight: 600;
     text-align: center;
@@ -250,7 +251,7 @@ h2 {
 }
 
 .mini-number, .price-number {
-    font-family: "Inter",sans-serif;
+    font-family: "Maison Neue";
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -261,7 +262,7 @@ h2 {
 }
 
 .mini-card-title, .price-title {
-    font-family: "Inter",sans-serif;
+    font-family: "Maison Neue";
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
@@ -283,7 +284,7 @@ h2 {
 .not-connected {
     background: rgba(0,0,0,.1);
     border-radius: 8px;
-    font-family: "Inter",sans-serif;
+    font-family: "Maison Neue";
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
