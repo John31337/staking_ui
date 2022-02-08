@@ -22,10 +22,10 @@ class Nav extends React.Component {
           <a aria-current="page" className="is-active">
             <div className='staking-nav-tab' variant="text" color="inherit">Overview</div>
           </a>
-          <a aria-current="page">
+          <a aria-current="page" href='/'>
             <div className="staking-nav-tab">Reward</div>
           </a>
-          <a aria-current="page">
+          <a aria-current="page" href='/LeaderBoard'>
             <div className="staking-nav-tab">LeaderBoard</div>
           </a>
           <a aria-current="page">

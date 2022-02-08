@@ -244,7 +244,7 @@ body,html {
 
 body {
     position: relative;
-    font-family: Graphik Brandpad,Helvetica,sans-serif
+    font-family: inherit;
 }
 
 button,input,select,textarea {

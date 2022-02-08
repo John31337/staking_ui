@@ -1,7 +1,7 @@
 body {
   margin: 0;
   height: max-content;
-  font-family: Graphik Brandpad,Helvetica,sans-serif;
+  font-family: inherit;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

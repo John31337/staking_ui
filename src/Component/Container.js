@@ -1,5 +1,5 @@
 import '../css/Body.css';
-// import '../css/Main.css';
+import '../css/Main.css';
 import Staking from "./Staking";
 import NotConnected from './NotConnected';
 import Staked from './Staked';

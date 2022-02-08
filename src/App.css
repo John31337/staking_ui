@@ -58,15 +58,8 @@ a {
 .staking-container {
   background-size: 100% 100%!important;
   padding-top: 40px;
-  padding-bottom: 80px;
+  /* padding-bottom: 80px; */
   background-position: 50%;
-}
-
-@media only screen and (max-width: 1200px){
-  .staking-container {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
 }
 
 .staking-nav-container {
@@ -80,6 +73,13 @@ a {
   z-index: 10;
 }
 
+@media only screen and (max-width: 1200px){
+  .staking-nav-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
 .staking-nav-contents-container {
   display: flex;
 }
@@ -87,7 +87,6 @@ a {
 .staking-nav-tab {
   font-family: "Maison Neue";
   font-style: normal;
-  font-weight: 600;
   font-size: 16px;
   line-height: 32px;
   color: #05070c;
@@ -114,20 +113,18 @@ a {
 }
 
 .is-active .staking-nav-tab {
-  color: #e57622;
+  color: #2c677a;
 }
 
 .staking-nav-wallet-button {
   font-family: "Maison Neue";
   font-style: normal;
-  font-weight: 600;
   font-size: 18px;
   line-height: 32px;
   letter-spacing: -.01em;
-  color: #05070c;
-  border-radius: 100px;
-  background: hsla(0,0%,100%,.8);
-  box-shadow: 40px 40px 40px rgb(204 204 204 / 25%), inset 2px 2px 2px #fff;
+  color: #ffffff;
+  border-radius: 8px;
+  background:  #a32a2f;
   border: none;
   padding: 8px 16px;
   transition: .3s;
@@ -135,11 +132,11 @@ a {
 
 @media only screen and (max-width: 900px){
   .staking-nav-wallet-button {
+    display: none;
     background: rgba(0,0,0,.05);
     box-shadow: none;
   }
 }
-
 
 .staking-nav-contents-container>button {
   margin: 8px;
@@ -149,7 +146,7 @@ a {
 
 .staking-nav-wallet-button:hover {
   box-shadow: none;
-  background: #fff;
+  background:  #a32a2f;
 }
 
 .chart-gradient {

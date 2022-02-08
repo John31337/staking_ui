@@ -7,7 +7,7 @@ function Price() {
   return (
     <div className="Price">
         <div className="mini-card">
-            <div className='price-card'>
+            {/* <div className='price-card'> */}
                 <div className='price-container'>
                     <div className='price-container-top'>
                         <span className="price-title">MC Price</span>
@@ -40,7 +40,7 @@ function Price() {
                                 </svg>
                             </div>
                         </div>
-            </div>
+            {/* </div> */}
         </div>
     </div>
   );
